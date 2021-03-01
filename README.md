@@ -7,13 +7,14 @@ Unfortunately, it is not easy to add C hashmaps to that benchmark. So, this repo
 # tl;dr
 
 These hashmaps perform better than others :
-- [rigtorp_hashmap (C++)] : (https://github.com/rigtorp/HashMap)
-- [sc (C)] : (https://github.com/tezc/sc)
-- [khash (C)] : (https://github.com/attractivechaos/klib)
-- [rdestl (C++)] : (https://github.com/msinilo/rdestl)
+- [rigtorp_hashmap (C++)](https://github.com/rigtorp/HashMap)
+- [sc (C)](https://github.com/tezc/sc)
+- [khash (C)](https://github.com/attractivechaos/klib)
+- [rdestl (C++)](https://github.com/msinilo/rdestl)
 
 # Results for the impatients
 
+<pre>
 Integer test results sorted by CPU Time
 =========================================================
 Implementation        | CPU (secs) | Memory (kB) |    #
@@ -148,3 +149,4 @@ Implementation        | CPU (secs) | Memory (kB) |    #
 28| htable            |      1.280 |  298080.000 | 625792
 29| rigtorp_hashmap   |      0.800 |  348480.000 | 625792
 
+</pre>
