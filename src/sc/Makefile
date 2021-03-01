@@ -1,6 +1,6 @@
 CC=			gcc
-CFLAGS=		-g -Wall -O2
-OBJS=		../benchmark/benchmark.o ../runit/runlib.o test.o
+CFLAGS=		-g -Wall -O2 -fomit-frame-pointer
+OBJS=		../benchmark/benchmark.o ../runit/runlib.o sc_map.o test.o
 DFLAGS=
 INCLUDES=	-I../benchmark -I../runit
 LIBS=		
@@ -14,8 +14,6 @@ all:test
 
 test:$(OBJS)
 		$(CC) $(CFLAGS) -o $@ $(OBJS) $(LIBS)
-
-test.o:
 
 cleanlocal:
 		rm -f *.o a.out *~ test
